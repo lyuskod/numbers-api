@@ -1,0 +1,28 @@
+{
+  "name": "numbers-api",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "index.js",
+  "scripts": {
+    "commit": "yarn cz"
+  },
+  "keywords": [
+    "numbersapi"
+  ],
+  "author": "Dmitry Lyusko",
+  "license": "ISC",
+  "dependencies": {
+    "commitizen": "^4.3.0",
+    "dotenv": "^16.3.1",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "type": "module"
+}
