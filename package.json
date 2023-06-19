@@ -12,8 +12,10 @@
   "author": "Dmitry Lyusko",
   "license": "ISC",
   "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.22.5",
     "commitizen": "^4.3.0",
     "dotenv": "^16.3.1",
+    "jest": "^29.5.0",
     "yarn": "^1.22.19"
   },
   "devDependencies": {
@@ -23,6 +25,12 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transformIgnorePatterns": [
+      "//node_modules"
+    ]
   },
   "type": "module"
 }

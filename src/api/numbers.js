@@ -1,11 +1,10 @@
-import 'dotenv/config'
 import Random from './random/random.js'
 
 class NumbersAPI {
   #randomInstance
   _baseUrl
 
-  constructor(baseUrl = process.env.NUMBERS_API_URL) {
+  constructor(baseUrl) {
     this._baseUrl = baseUrl
   }
 
