@@ -134,3 +134,6 @@ src/configs/mysql.json
 src/configs/server.json
 .DS_Store
 mongodml.json
+
+# Sandbox files
+demo.js
