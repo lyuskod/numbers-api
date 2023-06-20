@@ -1,7 +1,7 @@
-import Random from './random/random.js'
+import YearApi from './year.js'
 
-class NumbersAPI {
-  #randomInstance
+class NumbersApi {
+  #yearInstance
   _baseUrl
 
   constructor(baseUrl) {
@@ -9,14 +9,14 @@ class NumbersAPI {
   }
 
   /**
-   * Returns an instance of supported request data available for random fetch 
-   * @returns {Random}
+   * Returns an instance to operate on year api
+   * @returns {YearApi} Year api instance
    */
-  random() {
-    if (!this.#randomInstance) {
-      this.#randomInstance = new Random(this._baseUrl)
+  year() {
+    if (!this.#yearInstance) {
+      this.#yearInstance = new YearApi(this._baseUrl)
     }
-    return this.#randomInstance
+    return this.#yearInstance
   }
 }
-export default NumbersAPI
+export default NumbersApi
