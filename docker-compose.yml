@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  jest:
+    container_name: jest-numbers-tests
+    build: .
+    volumes:
+      - ./docker:/tests/report

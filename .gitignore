@@ -10,6 +10,7 @@ lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+report
 
 # Runtime data
 pids
@@ -137,3 +138,6 @@ mongodml.json
 
 # Sandbox files
 demo.js
+
+# Docker
+docker
