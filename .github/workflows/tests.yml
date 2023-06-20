@@ -1,0 +1,24 @@
+name: CI Tests
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install modules
+      run: yarn
+
+    - name: Run tests
+      run: yarn test
+      env:
+        NUMBERS_API_URL: ${{ vars.NUMBERS_API_URL }}
+
+    - name: Archive artifacts
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: jest-numbersapi-report
+        path: |
+          report
